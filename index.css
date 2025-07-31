@@ -1,0 +1,883 @@
+@font-face {
+    font-family:cinzel;
+    src: url(./fonts/Cinzel-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family:lora;
+    src: url(./fonts/Lora-VariableFont_wght.ttf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+
+    /*HEADER*/
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure header stays on top */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: add a subtle shadow */
+}
+
+.blue-header{
+    height: 60px;
+    background-color: #102169;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.estate-heading{
+    color: #ffd700;
+    font-family: cinzel, serif;
+    margin-left: 2rem;
+
+}
+
+.estate-heading h2{
+    font-weight: 500;
+}
+
+
+.nav-ops{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    margin-right: 2rem;
+    font-family: lora, serif;
+    
+}
+
+.nav-ops a{
+    color: white;
+    gap: 20px;
+    text-decoration:none;
+    font-weight: 50;
+}
+
+.white-header{
+    height: 50px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.white-nav-ops{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    margin: 0 2rem;
+    gap: 4rem;
+    
+}
+
+.white-nav-ops a{
+    color: black;
+    text-decoration: none;
+}
+
+.highlight-blue{
+    color: white;
+    transition: 0.3s ease;
+}
+
+.highlight-blue:hover{
+    color:#ffd700;
+    transition: 0.3s ease;
+}
+
+.highlight-white{
+    color: black;
+    transition: 0.3s ease;
+}
+
+.highlight-white:hover{
+    color:  #E0C067;
+    transition: 0.3s ease;
+}
+
+        /*MAIN PAGE*/
+
+
+main{
+    background-color: #f4f4f4;
+}
+
+.landing-page{
+    
+    padding: 2.3rem 30px;
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.landing-img{
+    background-image: url(./images/aditya-image.png);
+    background-position: center;
+    background-size: cover;
+    height: 375px;
+    border-radius: 15px;    
+}
+
+.image{
+    border-radius: 15px;
+    transition: 0.5s ease;
+}
+
+.image:hover{
+    transform: scale(1.02);
+    transition: 0.5s ease;
+}
+
+.estates-heading{
+    font-family: cinzel, serif;
+    color: #102169;
+}
+
+.gold-text{
+    color: #E0C067;
+}
+
+.estates-text{
+    font-size: 18px;
+    font-family: lora, serif;
+    margin-top: 2rem;
+}
+
+.span-bold{
+    font-weight: 800;
+    font-family: cinzel, serif;
+}
+
+.custom-hr{
+    width: 60%;
+    margin: auto;
+    color: #ffd700;
+    size: 2px;
+}
+
+    /*stats*/
+
+.stats{
+   margin: 3rem 3rem;
+   display: grid;
+   grid-template-rows: 1fr;
+   grid-template-columns: 1fr 1fr;
+}
+
+.collage-img{
+    height: 300px;
+    background-image: url(./images/collage-apartments.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+ 
+
+.actual-stats{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    place-items: center center;
+}
+
+.happy-fam ,.ten-years ,.twenty-plus ,.thousand-crores{
+    margin-bottom: 20px;
+}
+
+.happy-fam h3,.ten-years h3,.twenty-plus h3,.thousand-crores h3{
+    font-size: 30px;
+    font-weight: 525;
+    font-family: cinzel, serif;
+}
+
+.happy-fam p,.ten-years p,.twenty-plus p,.thousand-crores p{
+    color: #666666;
+    font-size: 15px;
+    
+}
+
+.ten-years{
+    margin-left: 3rem;
+}
+
+.twenty-plus{
+    margin-left: 3.5rem;
+}
+
+    /*Blue page*/
+
+.blue-page{
+    background-color: #102169;  
+}
+
+
+    /*Vizag-properties*/
+
+.vizag-properties{
+    padding: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.vizag-properties h2{
+    font-family: lora, serif;
+    font-weight: 150;
+    margin-bottom: 20px;
+}
+
+.four-properties{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+}
+
+.luxury-villa,.modern-apartment,.budget-home,.suburban-family{
+    
+    background-color: white;
+    color: #1a1a1a;
+    border-radius: 5px;
+    height: 200px;
+    overflow: hidden;
+
+}
+
+.luxury-villa-img{
+    background-image: url(./images/.luxury-villa);
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+    
+    
+}
+
+.modern-apartment-img{
+    background-image: url(./images/modern-apartment.png);
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.budget-home-img{
+    background-image: url(./images/1bhk.png);
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.sub-urban-img{
+    background-image: url(./images/suburban.png);
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.properties-img{
+    transition: 0.3s ease;
+}
+
+.properties-img:hover{
+    transform: scale(1.03);
+    transition: 0.3s ease;
+}
+
+.luxury-villa h3,.modern-apartment h3,.budget-home h3,.suburban-family h3{
+    margin-left: 4rem;
+    font-family: lora, serif;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: 500;
+
+}.luxury-villa p,.modern-apartment p,.budget-home p,.suburban-family p{
+    margin-left: 1rem;
+}
+
+.card{
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    /* box-shadow: 3px 3px 9px #ffd700; */
+    transform: translateY(-8px);
+    transition: 0.3s ease;
+}
+
+
+    /*Button hover*/
+
+.properties-img{
+    position: relative;
+}
+
+.card-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.9);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #102169;
+    color: white;
+    font-family: lora, serif;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+
+.card:hover .card-btn{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: 0.3s ease;
+}
+
+.card-btn i{
+    transition: 0.3s ease;
+}
+
+.card-btn:hover i{
+    transform: translateX(6px);
+    transition: 0.3s ease;
+}
+
+    /* Vizag Agents*/
+
+.custom-hr2{
+    margin: auto;
+    width: 70%;
+}
+
+.vizag-agents{
+    padding: 2rem;
+    color: white;
+}
+
+.vizag-agents h2{
+    font-family: lora, serif;
+    font-weight: 150;
+    margin-bottom: 20px;
+}
+
+.four-agents{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+}
+
+.sandeep-varma,.ravi-kumar,.anjali-reddy,.vikram-das{
+    background-color: white;
+    color: #1a1a1a;
+    border-radius: 5px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.sandeep-varma-img{
+    background-image: url(./images/sandeep-varma.png);
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.ravi-kumar-img{
+    background-image: url(./images/ravi-kumar1.png);
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.anjali-reddy-img{
+    background-image: url(./images/anjali-reddy-2.png);
+    height: 150px;
+    background-size: cover;
+    background-position: center 40%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.vikram-das-img{
+    background-image: url(./images/vikram-yadav.png);
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.sandeep-varma h3,.ravi-kumar h3,.anjali-reddy h3,.vikram-das h3{
+    margin-left: 4rem;
+    font-family: lora, serif;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+.sandeep-varma p,.ravi-kumar p,.anjali-reddy p,.vikram-das p{
+    margin-left: 4rem;
+}
+
+    /*Button hover*/
+
+.properties-img{
+    position: relative;
+}
+
+.card1-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.9);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #102169;
+    color: white;
+    font-family: lora, serif;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+
+.card:hover .card1-btn{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: 0.3s ease;
+}
+
+.card1-btn i{
+    transition: 0.3s ease;
+}
+
+.card1-btn:hover i{
+    transform: translateX(6px);
+    transition: 0.3s ease;
+}
+
+    /*Vizag-services*/
+
+.custom-hr3{
+    margin: auto;
+    width: 70%;
+}
+
+.vizag-services{
+    padding: 2rem;
+    color: white;
+}
+
+.vizag-services h2{
+    font-family: lora, serif;
+    font-weight: 150;
+    margin-bottom: 20px;
+}
+
+.two-services{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+}
+
+.house-loan,.interior-design{
+    background-color: white;
+    color: #1a1a1a;
+    border-radius: 5px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.house-loan-img{
+    background-image: url(./images/home-loan.png);
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.interior-design-img{
+    background-image: url(./images/int-design.png);
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;        
+}
+
+.interior-design h3{
+    margin-left: 4rem;
+    font-family: lora, serif;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+.house-loan h3{
+    margin-left: 2.3rem;
+    font-family: lora, serif;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+.interior-design p{
+    margin-left: 0.5rem;
+}
+
+    /*Button Hover*/
+
+.properties-img{
+    position: relative;
+}
+
+.card2-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.9);
+    padding: 8px 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: #102169;
+    color: white;
+    font-family: lora, serif;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+
+.card:hover .card2-btn{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: 0.3s ease;
+}
+
+.card2-btn i{
+    transition: 0.3s ease;
+}
+
+.card2-btn:hover i{
+    transform: translateX(6px);
+    transition: 0.3s ease;
+}
+
+        /*ANOTHER WHITE PAGE*/
+
+.white-page-again{
+    background-color: #f4f4f4;
+    padding: 2rem 2rem;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.offline-centers h2{
+    font-family: cinzel, serif;
+    font-weight: 600;
+    color: #102169;
+    margin: 1rem;
+    
+}
+
+.span-vizag{
+    color: #E0C067;
+}
+
+.offline-centers-img{
+    background-image: url(./images/our-offline-centers.png);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; 
+    margin: 2rem 0;
+    margin-right: 3rem;
+    margin-left: 1rem;
+}
+
+    /*Get-in touch*/
+
+.get-in-touch{
+    margin: 2rem 0;
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+.get-in-touch form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 16px;
+  padding: 2rem;
+
+}
+
+.contact.heading {
+  font-family: lora, serif;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #102169;
+}
+
+.div-name input,
+.div-email input,
+.div-phone input,
+.div-text textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.div-text textarea {
+  resize: none;
+}
+
+.div-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #102169;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: lora, serif;
+}
+
+.div-btn:hover {
+  background-color: #0b1654;
+  transition: background-color 0.3s ease;
+}
+
+        /* FOOTERRR*/
+
+.footer{
+    background-image: url(./images/footerrrr.jpg);
+    height: 200px;
+    background-position: center;
+    background-color: #102169;
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.footer h3{
+    font-family: cinzel, serif;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.links{
+    display: flex;
+    gap: 0.8rem;
+}
+.links a{
+    color: white;
+    
+}
+
+.links i{
+    font-size: 2rem;
+    transition: 0.4s ease;
+}
+.links i:hover{
+    color: #ffd700;
+    transition: 0.4s ease;
+}
+
+.links-p p{
+    color: #dcd5d5;
+    font-size: 12px;
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+@media (max-width: 768px) {
+    /* Header adjustments */
+    .blue-header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .estate-heading {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-ops {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .white-header {
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .white-nav-ops {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-top: 10px;
+        margin: 0 1rem;
+    }
+
+    /* Main content adjustments */
+    .landing-page {
+        grid-template-columns: 1fr; /* Stack columns on small screens */
+        padding: 1.5rem 15px;
+    }
+
+    .landing-img {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+
+    .estates-text {
+        margin-top: 1.5rem;
+        font-size: 16px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr; /* Stack columns */
+        margin: 2rem 1rem;
+        text-align: center;
+    }
+
+    .collage-img {
+        height: 200px; /* Adjust height */
+        margin-top: 2rem;
+    }
+
+    .actual-stats {
+        place-items: center;
+    }
+
+    .ten-years, .twenty-plus {
+        margin-left: 0; /* Remove specific margins */
+    }
+
+    /* Property, Agent, and Service Cards */
+    .four-properties,
+    .four-agents,
+    .two-services {
+        grid-template-columns: 1fr; /* Stack cards in a single column */
+        row-gap: 2rem;
+        column-gap: 0; /* Remove column gap */
+    }
+
+    .luxury-villa h3, .modern-apartment h3, .budget-home h3, .suburban-family h3,
+    .sandeep-varma h3, .ravi-kumar h3, .anjali-reddy h3, .vikram-das h3,
+    .interior-design h3, .house-loan h3 {
+        margin-left: 1rem; /* Adjust margin for smaller screens */
+        text-align: center;
+    }
+    
+    .luxury-villa p, .modern-apartment p, .budget-home p, .suburban-family p,
+    .sandeep-varma p, .ravi-kumar p, .anjali-reddy p, .vikram-das p,
+    .interior-design p {
+        margin-left: 1rem;
+        text-align: center;
+    }
+    
+    .house-loan p {
+        margin-left: 1rem;
+        text-align: center;
+    }
+    
+    .card {
+        height: auto; /* Allow card height to adjust */
+        padding-bottom: 10px; /* Add some padding at the bottom of the card */
+    }
+
+
+    /* Contact section */
+    .white-page-again {
+        grid-template-columns: 1fr; /* Stack columns */
+        height: auto;
+        padding: 1.5rem 15px;
+    }
+
+    .offline-centers h2 {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    .offline-centers-img {
+        height: 300px;
+        margin: 1rem 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .get-in-touch {
+        margin: 1.5rem 0;
+    }
+
+    /* Footer adjustments */
+    .footer {
+        height: auto;
+        padding: 1.5rem 0;
+    }
+
+    .footer h3 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .links {
+        gap: 1.2rem; /* Increase gap between social icons */
+    }
+}
