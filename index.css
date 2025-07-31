@@ -259,7 +259,7 @@ main{
 }
 
 .luxury-villa-img{
-    background-image: url(./images/.luxury-villa);
+    background-image: url(./images/luxury-villa);
     height: 150px;
     background-size: cover;
     background-position: center;
